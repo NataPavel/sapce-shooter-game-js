@@ -1,0 +1,1 @@
+// SpaceShipBoss calass - enemy class at the 2 level of the game
