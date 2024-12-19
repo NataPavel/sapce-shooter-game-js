@@ -11,8 +11,6 @@ import { loadAssets, getTextureByAlias } from "./assetsLoader"
         height: 720,
     });
 
-    app.canvas.style.position = 'absolute';
-
     document.body.appendChild(app.canvas);
 
     // Load assets
@@ -33,4 +31,5 @@ import { loadAssets, getTextureByAlias } from "./assetsLoader"
     // injecting pixi into game 
     const game = new Game(app);
     app.ticker.add(game.update, game);
+
 })();

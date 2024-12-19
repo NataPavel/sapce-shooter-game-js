@@ -1,9 +1,9 @@
 import { Container, Graphics } from "pixi.js";
 
-// Asteroids - enemy class at the first level of the game
-export default class Asteroids extends Container{
+// Asteroid - enemy class at the first level of the game
+export default class Asteroid extends Container{
 
-    #attackSpeed = 1; // speed of asteroids' attack
+    #attackSpeed = 1; // speed of asteroid's attack
 
     constructor(){
             super();
