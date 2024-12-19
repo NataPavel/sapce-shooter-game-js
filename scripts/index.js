@@ -7,8 +7,8 @@ import { loadAssets, getTextureByAlias } from "./assetsLoader"
     const app =  new Application();
 
     await app.init({
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: 1280,
+        height: 720,
     });
 
     app.canvas.style.position = 'absolute';

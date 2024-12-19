@@ -1,20 +1,21 @@
 import Asteroids from "./Entities/Asteroids";
-import HeroSpaceShip from "./Entities/HeroSpaceShip";
+import Player from "./Entities/Player";
 
 // Game class is the main class where everything works
 export default class Game{
     #app;
     #asteroid;
+    #player;
 
     constructor(app){
         this.#app = app;
 
-        const hero = new HeroSpaceShip() // creating main space ship which will be operated by player
+        this.#player = new Player() // creating main space ship which will be operated by player
         
         // assign coordinates of main space ship
-        hero.x = this.#app.screen.width / 2;
-        hero.y = this.#app.screen.height - 200;
-        this.#app.stage.addChild(hero);
+        this.#player.x = this.#app.screen.width / 2;
+        this.#player.y = this.#app.screen.height - 200;
+        this.#app.stage.addChild(this.#player);
 
         this.#asteroid = new Asteroids(); // creating main ateroid object
         this.#asteroid.x = 250;
@@ -25,5 +26,6 @@ export default class Game{
     // frame update function
     update(){
         this.#asteroid.update();
+        this.#player.update();
     }
 }
