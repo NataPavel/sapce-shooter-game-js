@@ -9,7 +9,7 @@ export default class Asteroid extends Container{
             super();
             const view = new Graphics();
     
-            view.circle(0, 0, 50, 50);
+            view.circle(0, 0, 50);
             view.stroke({
                 width: 8,
                 color: '8d0b41',
