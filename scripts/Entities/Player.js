@@ -5,7 +5,7 @@ import { Container, Graphics } from "pixi.js";
 export default class Player extends Container{
 
     // movement properties
-    #speed = 5;
+    #speed = 7;
     #left = false;
     #right = false;
 
@@ -19,7 +19,7 @@ export default class Player extends Container{
             color: '5db996',
         });
 
-        this.addChild(view)
+        this.addChild(view);
 
         window.addEventListener('keydown', this.onKeyDown.bind(this));
         window.addEventListener('keyup', this.onKeyUp.bind(this));
