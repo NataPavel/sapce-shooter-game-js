@@ -18,6 +18,10 @@ export default class Bullet extends Container{
         this.addChild(this.#view);
     }
 
+    deleteBullet(){
+        this.removeChild(this.#view)
+    }
+
     update(){
         this.y -= this.#speed;
     }
